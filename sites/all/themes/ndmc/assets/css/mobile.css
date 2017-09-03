@@ -1,0 +1,32 @@
+.parallaxParent {
+	height: 100vh;
+	overflow: hidden;
+}
+.parallaxParent > * {
+	height: 200%;
+	position: relative;
+	top: -50%;
+}
+
+.parallaxParent  img{
+	width:100%;
+}
+#myCarousel img{
+width:100%;
+  height:auto;
+}
+
+.views-slideshow-controls-bottom{
+position:relative;
+  z-index:7
+} 
+/*
+#parallax1 div{
+	background-image: url(../parallax/1.jpg);
+}
+						
+#parallax2 div{
+	background-image: url(../parallax/2.jpg);
+}
+
+*/

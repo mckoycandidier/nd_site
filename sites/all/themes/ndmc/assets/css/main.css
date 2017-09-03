@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
+
+
+/*
+override
+
+*/
+
+#page-title,
+#navigation,
+#header{
+	display:none
+	
+}
+.parallaxParent {
+	height: 100vh;
+	overflow: hidden;
+	position:relative;
+	z-index:-1;
+}
+.parallaxParent > * {
+	height: 200%;
+	position: relative;
+	top: -50%;
+}
+
+.parallaxParent  img{
+	width:100%;
+}
+
+.navbar{
+	background:#003200;
+	
+}
+#myCarousel img{
+max-width:100%;
+height:auto;
+}
+.carousel-caption {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.views-slideshow-controls-bottom{
+position:relative;
+  z-index:7
+} 
+.views-slideshow-controls-bottom  .views-slideshow-simple-pager{
+width:200px;
+margin:0 auto;
+}
+.views-slideshow-controls-bottom > div > div{
+padding:5px;
+   background:#000;
+}
+.views-slideshow-controls-bottom  a:link{
+color:#fff;
+
+}
+
+#myCarousel{
+position:relative
+  
+}
+.carousel-caption div{
+background:#000;
+  z-index:0;
+  font-size:0;
+  position:absolute;
+  opacity:.5;
+  width:100%;
+height:300px
+}
+#myCarousel .carousel-caption a{
+color:#ffdd00
+
+}
+.carousel-caption h1, 
+.carousel-caption p{
+  font-family: 'Noto Serif', serif;
+  position:relative;
+  z-index:5;
+  width:98%
+}
+
+#myCarousel .carousel-caption p{
+font-size:16px ;
+padding:0 20px;  
+}
+.nav > li > a{
+	z-index:7	
+}
+
+.ssg-block{
+  font-family: 'Noto Serif', serif;
+  background:#f4f4f4;
+  padding:5px 0
+}
+.ssg-block img{
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  vertical-align:top;
+}
+.preview-info{
+  padding:3px
+}
+.preview-content{ 
+ display:inline-block;
+ width:150px;
+ font-size:12px
+}
+.preview-info.animated,
+.article-info.animated{
+animation-fill-mode:none 
+}
+/*
+#parallax1 div{
+	background-image: url(../parallax/1.jpg);
+}
+						
+#parallax2 div{
+	background-image: url(../parallax/2.jpg);
+}
+
+*/
+.carousel-caption h1{
+color:#ffdd00;
+
+
+}
+.carousel-caption h1:hover{
+text-decoration:none
+}
+
+/*
+Back to Top 
+
+*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: /*rgba(232, 98, 86, 0.8)*/rgba(255, 153, 0, 0.5) url(img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: .5;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  border-radius:35px;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color:#FF9900 /*#e86256*/;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/* Webform Contact Us */
+#contact h2,
+#contact .submitted{
+	display:none
+	
+}
+
+

@@ -1,0 +1,63 @@
+name = NDMC
+description = A flexible, recolorable theme with many regions.
+package = Core
+version = VERSION
+core = 7.x
+
+
+stylesheets[all][] = assets/bootstrap/css/bootstrap.css
+stylesheets[all][] = assets/css/main.css
+stylesheets[all][] = assets/css/glyphicons.css
+stylesheets[all][] = assets/css/mobile.css
+stylesheets[all][] = assets/bootstrap/css/carousel.css
+;stylesheets-conditional[IE 10][all][] =  assets/bootstrap/css/ie10-viewport-bug-workaround.css
+stylesheets[all][] = assets/animate/animate.css
+
+
+scripts[] = assets/parallax/minified/greensock/TweenMax.min.js
+scripts[] = assets/parallax/minified/ScrollMagic.min.js
+scripts[] = assets/parallax/minified/plugins/animation.gsap.min.js
+
+
+
+scripts[] = assets/bootstrap/js/jquery.min
+scripts[] = assets/bootstrap/js/bootstrap.min.js
+scripts[] = assets/bootstrap/js/holder.min.js
+scripts[] = assets/js/modernizr.js
+;scripts[] = assets/js/custom.js
+;scripts[] = assets/bootstrap/js/ie-emulation-modes-warning.js
+;scripts[] = assets/bootstrap/js/ie10-viewport-bug-workaround.js
+
+
+
+
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by Drupal.org packaging script on 2017-06-21
+version = "7.56"
+project = "drupal"
+datestamp = "1498069849"
+
