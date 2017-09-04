@@ -256,9 +256,10 @@
 		</div>
     </div><!-- /.container -->
 
-		
+	
 	<script src="http://localhost/ndmc/sites/all/themes/ndmc/assets/animate/scrolla.jquery.min.js"></script>	
 	<script src="http://localhost/ndmc/sites/all/themes/ndmc/assets/js/custom.js"></script>	
+	
 
 
     </body>
