@@ -1,6 +1,11 @@
-$(document).ready(function($){
+$(document).ready(function(){
+	
+	 $('.content-item').css('background', function () { 
+      return "url(" + $(this).attr('data-bg') + ")"
+    });
 	
 	$( ".page-image img" ).addClass( "img-responsive" );
+	$( ".latest-news-image img" ).addClass( "img-circle" );
 	//
 	//parallax
 	//

@@ -83,13 +83,26 @@
         <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->  
-     
-
+    <div id="newsEvent">
+		<div class="container">
+			<div class="row">	
+				<div class="col-md-3 latest-events">
+					<h2> Latest News &#38; Events</h2>
+					<a href="#">View all News &#38; Events</a>
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+					<?php  echo views_embed_view('latest_news', $display_id = 'block'); ?> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     
 	
-	<div class="container">
+	<div class="container" id="main-content">
 		<div class="row">	
-			<div class="col-md-3 animate"  data-animate="bounceIn" data-duration="1.0s" data-delay="0.3s">
+			<div class="col-md-3" >
 			
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				  <div class="panel panel-default">
@@ -123,8 +136,46 @@
 					</div>
 				  </div> 
 				</div>
-			
-			
+				
+				<!-- Regina Publication -->
+				<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+					  <h4 class="panel-title">
+					 
+						<a role="button" data-toggle="collapse" data-parent="#accordion2" href="#RecollapseOne" aria-expanded="true" aria-controls="collapseOne">
+						Regina Publication
+						</a>
+					  </h4>
+					</div>
+					<div id="RecollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					  <div class="panel-body">
+						New Book 
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+					  <h4 class="panel-title">
+					
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#RecollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						New Stories
+						</a>
+					  </h4>
+					</div>
+					<div id="RecollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					  <div class="panel-body">
+						<li>Campus Activities</li>
+						<li>Campus Activities</li>
+						<li>Campus Activities</li>
+						<li>Campus Activities</li>
+						<li>Campus Activities</li>
+						<li>Campus Activities</li>
+						
+					  </div>
+					</div>
+				  </div> 
+				</div>
 				
 			</div>
 			<div class="col-md-3 ssg-block animate"  data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
@@ -139,7 +190,9 @@
 			</div>
 			
 			<div class="col-md-3 animate"  data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
+				<div class="list-group">
 				<?php  echo views_embed_view('school_admin', $display_id = 'block_1'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -151,52 +204,155 @@
 	<div class="container department-teaser">
 		<div class="row">	
 			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
-				<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  
+				  <div class="overlay"></div>
+				  
+				  <div class="corner-overlay-content">Info</div>
+				  
+				  <div class="overlay-content">
+					<h2>CITE Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>
+				  
+				</div>
 			</div>
 			
 			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.2s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department CBA
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  
+				  <div class="overlay"></div>
+				  
+				  <div class="corner-overlay-content">Info</div>
+				  
+				  <div class="overlay-content">
+					<h2>CBA Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>
+				  
+				</div>
+				
 			</div>
 			
 			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.3s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department CED
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>CED Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
 			</div>
-			
-			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.2s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department CCJE
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>CCJE Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
 			</div>
 		</div>
 		
-		<div class="row">	
-			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department CN
-			</div>
+		<div class="row">
 			
-			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.0s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department CAS
-			</div>
 			
-			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department DMMST
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>CN Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
 			</div>
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>CAS Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
+			</div>
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>DMMST Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
+			</div>
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>GRADUATE STUDIES Department</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
+			</div>
+
+		</div>
+		
+		<div class="row">
 			
-			<div class="col-md-3 animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.2s">
-			<?php  echo views_embed_view('cite', $display_id = 'block'); ?> 
-				Department GRADUATE STUDIES
+			
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>Community Extension</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
 			</div>
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>Senior HS</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
+			</div>
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>High School</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
+			</div>
+			<div class="col-md-3">
+				<div class="content-item" data-bg="https://dribbble.s3.amazonaws.com/users/21389/screenshots/537633/image_ink_logo.png">
+				  <div class="overlay"></div>
+				  <div class="corner-overlay-content">Info</div>  
+				  <div class="overlay-content">
+					<h2>ELEMENTARY</h2>
+					<p>Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.</p>
+				  </div>  
+				</div>	
+			</div>
+
 		</div>
 	</div>
-	<!--
+	
    <div id="parallax3" class="parallaxParent">	
 		<?php  echo views_embed_view('parallax', $display_id = 'block'); ?> 
 	</div>
-	-->
+	
 	<div class="container">
 		<div class="row">	
 			<div class="col-md-3">
@@ -211,7 +367,7 @@
 			<div class="col-md-6">
 				<div class="row">	
 					<div class="col-md-6">
-						SHS
+						sfs
 					</div>
 					
 					<div class="col-md-6">
